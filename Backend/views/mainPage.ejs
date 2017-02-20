@@ -1,0 +1,53 @@
+<% include common/header.ejs %>
+
+<div class="order_board">
+        <div class="top-panel">
+            <div class="order">Замовлення</div>
+            <span class="amount">0</span>
+            <span class="clean-order">Очистити замовлення</span>
+        </div>
+        <div class="main-panel">
+            <div class="board-label">
+                Порожньо в холодильнику?
+                <br> Замовте піцу!
+            </div>
+            <div id="cart"></div>
+            </div>
+        <div class="bottom-panel">
+            <div class="sum_text" >Сума замовлення</div>
+            <div class="sum" style="display:none"></div>
+            <a href="order.html"><button class="order_button">Замовити</button></a>
+        </div>
+    </div>
+    
+    <div class="container">
+        
+        <div class="menu">
+            <div>
+                <span class="top_menu">Усі піци</span>
+                <span class="amount-pizza">8</span>
+            </div>
+            <ul id ="filter" class="nav nav-pills">
+                <li class="pizza-filter" id="all-pizza">     
+                    <a href="#">Усі</a>
+                </li>
+                <li class="pizza-filter" id="meat">
+                    <a href="#">М'ясні</a>
+                </li>
+                <li class="pizza-filter" id="pineapple">
+                    <a href="#">З ананасами</a>
+                </li>
+                <li class="pizza-filter" id="mushroom">
+                    <a href="#">З грибами</a>
+                </li>
+                <li class="pizza-filter" id="ocean">
+                    <a href="#">З морепродуктами</a>
+                </li>
+                <li class="pizza-filter" id="withotmeat">
+                    <a href="#">Вега</a>
+                </li>
+            </ul>
+        </div>
+        <div class="row" id="pizza_list"></div>
+
+<% include common/footer.ejs %>
